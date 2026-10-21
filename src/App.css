@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #eef2f6;
+  color: #1c2b36;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cities ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.city {
+  width: 100%;
+  padding: 12px 14px;
+  text-align: left;
+  font: inherit;
+  background: #ffffff;
+  color: inherit;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.city:hover {
+  border-color: #9fb3c4;
+}
+
+.city.active {
+  background: #1c2b36;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+}
+/*b5*/
+.state {
+  text-align: center;
+  padding: 32px 8px;
+}
+
+.retry {
+  margin-top: 8px;
+  padding: 10px 24px;
+  font: inherit;
+  font-weight: 600;
+  color: #ffffff;
+  background: #1c2b36;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.now h2 {
+  margin: 0 0 4px;
+}
+
+.now-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+}
+
+.icon {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.stats {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+/*b6*/
+.forecast-box {
+  margin-top: 24px;
+}
+
+.forecast-box h3 {
+  margin: 0 0 8px;
+}
+
+.forecast {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.forecast li {
+  display: grid;
+  grid-template-columns: 90px 56px 40px 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  border-top: 1px solid #d5dde4;
+}
+
+.forecast .today {
+  font-weight: 700;
+}
+
+.date {
+  color: #5b6b78;
+  font-size: 0.9rem;
+}
+
+.icon-sm {
+  font-size: 1.5rem;
+}
+
+.range {
+  text-align: right;
+}
+
+.range span {
+  color: #5b6b78;
+}
